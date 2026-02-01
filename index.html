@@ -69,6 +69,23 @@
             50% { transform: translateY(-20px) rotate(5deg); }
         }
 
+        /* Banner superior */
+        .banner-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            border: 5px solid #000;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 8px 8px 0px #000;
+        }
+
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         /* Logo con rotación */
         .logo-container {
             transform: rotate(-2deg);
@@ -191,6 +208,11 @@
 
         /* Responsive */
         @media (max-width: 640px) {
+            .banner-container {
+                margin-bottom: 1.5rem;
+                box-shadow: 6px 6px 0px #000;
+            }
+
             .logo-text {
                 font-size: 2.25rem;
                 text-shadow: 3px 3px 0px #f36f21;
@@ -220,6 +242,11 @@
     <div class="bg-icon icon-camera">📸</div>
 
     <div class="container">
+        <!-- Banner superior -->
+        <div class="banner-container">
+            <img src="portada.jpeg" alt="La Vaina es Salir" class="banner-img">
+        </div>
+
         <!-- Logo -->
         <div class="logo-container" style="text-align: center;">
             <h1 class="logo-text">LA VAINA<br>ES SALIR</h1>
